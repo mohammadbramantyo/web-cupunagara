@@ -1,0 +1,89 @@
+@import url('https://fonts.cdnfonts.com/css/beautiful-2');
+.bg-img{
+  filter: blur(0px);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 1px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+/* If the screen size is 1200px wide or more, set the font-size to 80px */
+@media (min-width: 1200px) {
+  .responsive-font {
+    font-size: 80px;
+  }
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 1199.98px) {
+  .responsive-font {
+    font-size: 30px;
+  }
+}
+
+#profil-desa p {
+  font-family: Georgia,Times,Times New Roman,serif; 
+  font-size: 20pt; 
+  font-style: normal; 
+  font-variant: normal; 
+  line-height: 40px; 
+  }
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.bg-honey{
+  /* background-image: linear-gradient(90deg, #FFC62A 60%, white 40%);
+   */
+   background-color: #FFC62A;
+}
+
+.drop-shadow{
+  filter: drop-shadow(21px 10px 15px #000);
+  max-height: 400px;
+}
+.honey-img{
+  max-width: 300px;
+  max-height: 400px;
+}
+.section-title{
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: 64pt;
+}
+.honey-desc, .gulaaren-desc{
+  font-family: 'Poppins';
+  font-size: 30pt;
+}
+.oleh-oleh-gulaaren h2{
+  font-family: 'Beautiful', sans-serif;
+  font-size: 69pt;
+}
+.img-gradient-left{
+  max-height:50%;
+  mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+}
+.img-gradient-right{
+  mask-image: linear-gradient(to left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+}
