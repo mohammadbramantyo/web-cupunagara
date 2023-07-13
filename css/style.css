@@ -1,4 +1,9 @@
 @import url('https://fonts.cdnfonts.com/css/beautiful-2');
+@import url('https://fonts.cdnfonts.com/css/all-pony');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.cdnfonts.com/css/georgia');
+
+                
 .bg-img{
   filter: blur(0px);
 
@@ -39,11 +44,14 @@
 
 #profil-desa p {
   font-family: Georgia,Times,Times New Roman,serif; 
-  font-size: 20pt; 
+  font-size: 1.5rem; 
   font-style: normal; 
   font-variant: normal; 
-  line-height: 40px; 
   }
+
+#oleh-oleh header{
+  background-color: orange;
+}
 
 h2 {
   font-family: Arial, Helvetica, sans-serif;
@@ -52,11 +60,8 @@ h2 {
 
 
 .bg-honey{
-  /* background-image: linear-gradient(90deg, #FFC62A 60%, white 40%);
-   */
    background-color: #FFC62A;
 }
-
 .drop-shadow{
   filter: drop-shadow(21px 10px 15px #000);
   max-height: 400px;
@@ -68,22 +73,154 @@ h2 {
 .section-title{
   font-family: 'Poppins';
   font-weight: bold;
-  font-size: 64pt;
+  font-size: 7rem;
 }
 .honey-desc, .gulaaren-desc{
   font-family: 'Poppins';
-  font-size: 30pt;
+  font-size: 2rem;
 }
+#oleh-oleh header h1,
 .oleh-oleh-gulaaren h2{
   font-family: 'Beautiful', sans-serif;
-  font-size: 69pt;
+  font-size: 7rem;
 }
 .img-gradient-left{
-  max-height:50%;
   mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
   -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  height: 70vh;
 }
 .img-gradient-right{
   mask-image: linear-gradient(to left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
   -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  height: 50vh;
+}
+
+.sapu-container{
+  background-image: url('/img/bg\ sapu.jpg');
+
+    height: 90vh;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sapu-desc-container{
+  background-color: #A7E6BD;
+}
+.sapu-desc-container h2{
+  font-family: 'All Pony', sans-serif;
+  font-size: 8rem;    
+}
+
+.sapu-desc-container h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: lighter;
+  
+}
+
+.sapu-desc-container p{
+  font-family: 'Georgia', sans-serif;
+  font-size: 2rem;                                            
+}
+
+
+@media (max-width: 480px){
+  article, section{
+    flex-direction: column !important;
+  }
+  .section-title{
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  /* Profil Desa */
+  #profil-desa section{
+    padding: 0 !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  #profil-desa p{
+    width: 100% !important;
+    }
+
+  /* Oleh-oleh header dan gula aren*/
+  #oleh-oleh header h1,
+.oleh-oleh-gulaaren h2{
+  font-family: 'Beautiful', sans-serif;
+  font-size: 3rem;
+}
+
+/* oleh oleh madu */
+.madu-wrapper{
+  flex-direction: column-reverse;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.honey-desc{
+  width: 100% !important;
+  padding: 0 !important;
+  font-size: 1.5rem;
+}
+.honey-desc-container{
+  padding: 0 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.bg-honey{
+  flex-direction: row !important;
+}
+
+.honey-img-container{
+  width: 100% !important;
+}
+.honey-img{
+  width: 50% !important;
+}
+
+/* oleh oleh gula aren */
+.row-1{
+  flex-direction: column !important;
+}
+.oleh-oleh-gulaaren div p{
+  font-size: 1.5rem;
+  text-align: justify !important;
+  width: 100% !important;
+}
+.row-2{
+  flex-direction: column-reverse !important;
+}
+.img-gradient-left{
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  height: 50vh;
+}
+.img-gradient-right{
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+}
+
+/* sapu uyun */
+.sapu-desc-container h2{
+  font-size: 5rem;    
+}
+
+.sapu-desc-container h3{
+  font-size: 1.5rem;
+  font-weight: lighter;
+  
+}
+
+.sapu-desc-container p{
+  font-size: 1.2rem;                                            
+}
+.sapu{
+  height: 80% !important;
+  width: 80% !important;
+}
 }

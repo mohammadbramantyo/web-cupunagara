@@ -13,9 +13,15 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Oleh Oleh Cupunagara</title>
   </head>
+  
+
+  
   <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
+      <a class="navbar-brand" href="#hero-section">
+        <img src="img/logo desa.png" alt="" width="40" height="40">
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -30,7 +36,7 @@
     </nav>
   </header>
   <main>
-    <div class="hero container-fluid px-0 bg-img">
+    <div class="hero container-fluid px-0 bg-img" id="hero-section">
       <div class=" h-100">
         <img src="img/hero-img.png" alt="background desa" class="img-fluid ">
         <div class="bg-text">
@@ -49,7 +55,7 @@
         seperti di atas menjadikan desa ini sebagai penghasil komoditas teh, kopi, gula aren, dan aneka produk kebun lainnya.
       </p>
       </section>
-      <section class="d-flex flex-column p-2 w-50 h-50">
+      <section class="d-flex flex-column p-2 w-50 h-50 profil-container" data-aos="fade-up">
         <img src="img/gambar profil 1.png" alt="" class="img-fluid">
         <img src="img/gambar profil 2.png" alt="" class="img-fluid">
       </section>
@@ -59,34 +65,35 @@
       <header>
         <h1 class="section-title text-center">Oleh-oleh</h1>
       </header>
-      <section class="oleh-oleh-madu d-flex">
-        <section class="w-50 d-flex flex-column">
-          <div class="bg-container bg-honey d-flex flex-column">
-            <img src="img/madu 2.png" alt="" class="img-fluid drop-shadow honey-img mx-auto">
-            <img src="img/madu 3.png" alt="" class="img-fluid drop-shadow honey-img mx-auto">
-          </div>
-        </section>
-
-        <section class="d-flex flex-column w-75 px-5 mx-5">
-          <h2 class="text-center section-title mb-5">Madu Alami</h2>
-          <p class="text-justify honey-desc mx-auto w-50">
-            Desa Cupunagara dikenal memiliki berbagai produk lokal yang unik dan otentik. 
-            Salah satu kebanggaan kami adalah madu alami asli langsung dari alam tanpa bahan pengawet. 
-          </p>
-        </section>
+      <section class="oleh-oleh-madu">
+        <div class="madu-wrapper d-flex">
+          <section class="w-50 honey-img-container">
+            <div class="bg-honey d-flex flex-column" >
+              <img src="img/madu 2.png" alt="" class="img-fluid drop-shadow honey-img mx-auto" data-aos="zoom-in-up">
+              <img src="img/madu 3.png" alt="" class="img-fluid drop-shadow honey-img mx-auto" data-aos="zoom-in-up">
+            </div>
+          </section>
+          <section class="d-flex flex-column w-75 px-5 mx-5 honey-desc-container">
+            <h2 class="text-center section-title mb-5">Madu Alami</h2>
+            <p class="text-justify honey-desc mx-auto w-50">
+              Desa Cupunagara dikenal memiliki berbagai produk lokal yang unik dan otentik. 
+              Salah satu kebanggaan kami adalah madu alami asli langsung dari alam tanpa bahan pengawet. 
+            </p>
+          </section>
+        </div>
       </section>
       <section class="oleh-oleh-gulaaren bg-dark px-5">
-        <h2 class="text-center text-light py-auto">Gula Aren</h2>
-        <div class="d-flex flex-row justify-content-between text-light">
+        <h2 class="text-center text-light py-auto section-title">Gula Aren</h2>
+        <div class="d-flex flex-row justify-content-between text-light row-1">
           <p class="text-left gulaaren-desc my-auto w-50">Selain itu, desa kami juga terkenal dengan gula aren yang diolah dengan metode tradisional yang autentik. 
             Setiap tetes gula aren kami menceritakan kisah panjang tentang keahlian dan dedikasi kami dalam menjaga kualitas. </p>
             <div class="img-gradient-left">
-              <img src="img/proses gula aren.jpeg" alt="" class="img-fluid">
+              <img src="img/proses gula aren.jpeg" alt="" class="img-fluid" data-aos="fade-left">
             </div>
         </div>
-        <div class="d-flex flex-row justify-content-between text-light">
+        <div class="d-flex flex-row justify-content-between text-light row-2">
           <div class="img-gradient-right">
-            <img src="img/aren dibungkus.jpg" alt="" class="img-fluid">
+            <img src="img/aren dibungkus.jpg" alt="" class="img-fluid" data-aos="fade-right">
           </div>
           <p class="text-right gulaaren-desc my-auto w-50">
             Tanpa pengawet, gula aren kami menghadirkan rasa manis yang alami dan khas, sangat cocok digunakan untuk memasak 
@@ -94,7 +101,17 @@
           </p>
         </div>
       </section>
-      <section class="oleh-oleh-sapuuyun"></section>
+      <section class="oleh-oleh-sapuuyun">
+        <div class="sapu-container flex-column d-flex justify-content-end">
+          <img src="img/sapu-grup.png" alt="" class="img-fluid h-75 w-50 mx-auto sapu" data-aos="zoom-in">
+        </div>
+        <div class="sapu-desc-container text-center">
+          <h2 class="text-light py-auto">Sapu Uyun</h2>
+          <h3 class="text-light text-uppercase">kerajinan khas desa cupunaraga</h3>
+          <p class="w-75 mx-auto">Sapu Uyun terbuat dari tanaman Uyun yang tumbuh subur di sekitar desa. 
+            Setiap sapu dibuat oleh tangan terampil para pengrajin sehingga menghasilkan sapu berserabut lebat, kuat, dan estetik.</p>
+        </div>
+      </section>
     </article>
   </main>
 
@@ -103,7 +120,11 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
 </html>
